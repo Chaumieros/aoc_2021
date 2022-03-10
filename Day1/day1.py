@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
 
-
-from ast import increment_lineno
-from functools import reduce
-from os import defpath
-from time import perf_counter
-import os
-
-
 def step1():
     with open('data.txt', 'r') as f:
         
@@ -42,8 +34,6 @@ def step2():
     with open('data.txt', 'r') as f:
         lines = list(map(int, f.read().splitlines()))
 
-        # len(lines)
-
         for (index , depth) in enumerate(lines[offset:]):
             index = index + offset
             current_sum = sum(lines[index:index+3])
@@ -53,8 +43,5 @@ def step2():
    
 
         print(f"There are {increased_count} sums that are larger than the previous sum")    
-        print(len(lines))
-step2()
 
-print(os.path.abspath(os.path.__file__))
-print(os.path.abspath(os.path.dirname(__file__)))
+step2()
