@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 def get_movements(l):
     #return an array of tuples as (movement : stf , value : str) for each line of the list l.
