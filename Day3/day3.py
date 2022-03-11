@@ -23,4 +23,4 @@ def step2(bin_list):
 
 with open('data.txt', 'r') as file:
     data = file.read().splitlines()
-    print(step1(data))
+print(step1(data))
