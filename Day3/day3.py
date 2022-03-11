@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 
-def step1(bin_list):
-    
+def step1(bin_list):    
     gamma = ''
     epsilon = ''
 
@@ -12,8 +11,7 @@ def step1(bin_list):
 
         gamma += '0' if (sum_of_0 > sum_of_1) else '1'
         epsilon += '1' if (sum_of_0 > sum_of_1) else '0'
-
-        
+    
     return int(gamma, 2) * int(epsilon, 2)
         
     
@@ -23,4 +21,4 @@ def step2(bin_list):
 
 with open('data.txt', 'r') as file:
     data = file.read().splitlines()
-    print(step1(data))
+print(step1(data))
