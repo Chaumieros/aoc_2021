@@ -9,8 +9,8 @@ def step1(bin_list):
         sum_of_0 = sum(number[bit] == '0' for number in bin_list)
         sum_of_1 = sum(number[bit] == '1' for number in bin_list)
 
-        gamma += '0' if (sum_of_0 > sum_of_1) else '1'
-        epsilon += '1' if (sum_of_0 > sum_of_1) else '0'
+        gamma += '0' if sum_of_0 > sum_of_1 else '1'
+        epsilon += '1' if sum_of_0 > sum_of_1 else '0'
     
     return int(gamma, 2) * int(epsilon, 2)
         
